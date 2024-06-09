@@ -1,0 +1,47 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ece8f5;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+#result-container {
+    margin-top: 20px;
+    text-align: center;
+}
+.question {
+    display: none;
+}
+.question.active {
+    display: block;
+}
+.question-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+label {
+    display: flex;
+    align-items: center;
+}
+
+label input[type="radio"] {
+    margin-right: 10px;
+}
