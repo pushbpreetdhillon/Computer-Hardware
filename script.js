@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const questions = document.querySelectorAll('.question');
-    const nextButton = document.getElementById('next-btn');
+    const nextButton = document.getElementById('next-button');
     const resultContainer = document.getElementById('result-container');
     const resultElement = document.getElementById('result');
 
