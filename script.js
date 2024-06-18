@@ -26,11 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const question = questions[currentQuestionIndex];
         const correctIndex = parseInt(question.getAttribute('data-correct'));
         const selectedAnswer = question.querySelector('input[type="radio"]:checked');
+
         if (!selectedAnswer) {
             return;
         }
-        const isCorrect = parseInt(selectedAnswer.value) === correctIndex;
-        
+
+        const selectedIndex = parseInt(selectedAnswer.value);
+        const isCorrect = selectedIndex === correctIndex;
+
         if (isCorrect) {
             score++;
         }
