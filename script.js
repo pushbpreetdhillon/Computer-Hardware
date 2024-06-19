@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function startQuiz() {
         currentQuestionIndex = 0;
         score = 0;
-        nextButton.style.display = 'none';
+        nextButton.textContent = 'Next';
+        nextButton.removeEventListener('click', startQuiz);
+        nextButton.addEventListener('click', showNextQuestion);
         resultContainer.style.display = 'none';
         showQuestion(currentQuestionIndex);
     }
